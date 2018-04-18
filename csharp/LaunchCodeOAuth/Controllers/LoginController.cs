@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PrizmDoc_NET_Core_Sample.Controllers
+namespace LaunchCodeOAuth.Controllers
 {
     [Route("/")]
-    public class IndexController : Controller
+    public class LoginController : Controller
     {
-        [HttpGet(""), ActionName("Login")]
+        [HttpGet("login"), ActionName("Login")]
         public IActionResult GetLogin()
         {
             return View();

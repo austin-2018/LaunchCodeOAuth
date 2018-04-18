@@ -5,8 +5,6 @@ import { app } from "../../server";
 
 export function index() {
 	app.get("/", function(request, response) {
-		response.render("pages/index", {
-			"home": "localhost:" + config.get("port")
-		});
+		response.render("pages/index");
 	});
 }
